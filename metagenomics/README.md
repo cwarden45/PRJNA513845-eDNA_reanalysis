@@ -1,4 +1,4 @@
-As noted in [this file](https://github.com/cwarden45/Bastu_Cat_Genome/blob/master/Basepaws_Notes/Read_QC/PRJNA513845-eDNA/extended_summary.xlsx), there are considerable prokaryotic taxonomy assignments from the SRA.  Most commonly, those are for "*Candidatus Pelagibacter ubique*" and "*Candidatus Pelagibacter sp. HIMB1321*", but additional assignments are also made (particuarlly as sequencing depth increases).
+As noted in [this file](https://github.com/cwarden45/PRJNA513845-eDNA_reanalysis/blob/master/extended_summary.xlsx), there are considerable prokaryotic taxonomy assignments from the SRA.  Most commonly, those are for "*Candidatus Pelagibacter ubique*" and "*Candidatus Pelagibacter sp. HIMB1321*", but additional assignments are also made (particuarlly as sequencing depth increases).
 
 So, I have tried to note some different strategies  for metagenomics analysis in order to compare to the SRA (before and after filtering)
 
@@ -81,7 +81,7 @@ So, additional sequences are being found, but I don't think they are substantial
 
 That said, I thought it might have been unexpected that there were a lot more reads uniquely aligned ot the mouse genome than the human genome?  If I use a Bowtie2 alignment in the next section (to just the  mouse genome), then that will also include the reads mapped to multiple species (in the figure but not the table).  However, I will first check alignment against the COI sequence from which the primers were designed.
 
-**4)** [COI](https://github.com/cwarden45/Bastu_Cat_Genome/blob/master/Basepaws_Notes/Read_QC/PRJNA513845-eDNA/OTU_clustering/COI_ref.fa) reference alignment (`run_COI_Bowtie2-SE.py`, followed by `tabulate_Bowtie2_statistics.py`)
+**4)** [COI](https://github.com/cwarden45/PRJNA513845-eDNA_reanalysis/blob/master/OTU_clustering/COI_ref.fa) reference alignment (`run_COI_Bowtie2-SE.py`, followed by `tabulate_Bowtie2_statistics.py`)
 
 For these samples, I am not really primarily interested in the metagenomic assignments.  Instead, I am trying to get a sense of the off-target reads.  So, for that, calculating the unaligned read rate might be helpful for that goal.
 
