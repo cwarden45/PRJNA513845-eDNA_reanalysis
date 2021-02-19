@@ -1,6 +1,6 @@
 The orignal goal was to look for barcodes past the amplicon sequence to get a sense of barcode hopping (as was done for [this feline Whole Genome Sequencing sample](https://github.com/cwarden45/Bastu_Cat_Genome/tree/master/Basepaws_Notes/Read_QC)).  However, to better connnect the data on [Zenodo](https://zenodo.org/record/4546559), this separate repository was created.  So, to see the earliest history, you will have to view the [other reposistory](https://github.com/cwarden45/Bastu_Cat_Genome/tree/05197be171c846dcb21a7bfd1d1789cb6d405501/Basepaws_Notes/Read_QC/PRJNA513845-eDNA).  This probably won't be necessary (or possibly even helpful), but I am making a note to be as transparent as possible
 
-Getting back to the analysis, at first, I was not sure why my code is not identifying any barcodes (especially for the MiSeq samples), so I started to look at 1 example.
+Getting back to the analysis for this [post-publication review discussion](https://www.nature.com/articles/s41598-019-42455-9#article-comments), at first, I was not sure why my code is not identifying any barcodes (especially for the MiSeq samples), so I started to look at 1 example.
 
 For example, here are the 1st 3 paired-end reads for SRR8423864:
 
