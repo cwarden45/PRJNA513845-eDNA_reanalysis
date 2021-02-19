@@ -1,6 +1,6 @@
 The orignal goal was to look for barcodes past the amplicon sequence to get a sense of barcode hopping (as was done for [this feline Whole Genome Sequencing sample](https://github.com/cwarden45/Bastu_Cat_Genome/tree/master/Basepaws_Notes/Read_QC)).
 
-At first, I was not sure why my code is not identifying any barcodes (especially for the MiSeq samples), but I started to look at 1 example.
+At first, I was not sure why my code is not identifying any barcodes (especially for the MiSeq samples), so I started to look at 1 example.
 
 For example, here are the 1st 3 paired-end reads for SRR8423864:
 
