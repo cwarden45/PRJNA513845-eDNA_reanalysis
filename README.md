@@ -151,10 +151,30 @@ In addition to wanting to check how often the adjacent barcode in the sequenced 
 
 **1b)** What does the degenerate nucleotide sequence “I” represent?  I could find the [others]( https://www.bioinformatics.org/sms/iupac.html), but I apologize that I was not sure about that one.
 
-**2)** Even among DADA2 filtered and corrected reads, the percentage of sequences outside of the length that I thought you might expect (less than 200 bp or more than 300 bp) is greater for the FishE amplicon.  This is true for either the MiSeq or the NovaSeq data in the [DADA2 sequences](https://github.com/cwarden45/PRJNA513845-eDNA_reanalysis/blob/master/DADA2/DADA2-merged-and-corrected_outlier_length_percentage.png) that I defined.
+**2)** Even among DADA2 filtered and corrected reads, the percentage of sequences outside of the length that I thought you might expect (less than 200 bp or more than 300 bp) is greater for the FishE amplicon.  This is true for either the MiSeq or the NovaSeq data in the DADA2 sequences that I defined:
+
+![Varying "Outliers" by Primer Set]((https://github.com/cwarden45/PRJNA513845-eDNA_reanalysis/blob/master/DADA2/DADA2-merged-and-corrected_outlier_length_percentage.png "Varying "Outliers" by Primer Set")
 
 Do you agree that these merged and corrected read lengths are outliers that may be more likely to be off-target sequence and/or cross contamination?
 
 If so, it looks like the effect is more due the amplicon than the sequencer, and the FishE percentage of outlier length sequences is a bit higher for NovaSeq (but that would be undesirable, if my understanding is correct).
 
 **Re-Analysis / Conclusions About Sequencer Effect**:
+
+**1)**  I only look for sequences that are present at a frequency of greater than 1 in 10,000 (if there are at least 20,000 remaining reads), then those look very similar:
+https://github.com/cwarden45/Bastu_Cat_Genome/blob/master/Basepaws_Notes/Read_QC/PRJNA513845-eDNA/OTU_clustering/Swarm.min2reads.FLASH_merged_unique_merged_per10k_versus_total_merged.png
+On the other hand, if you go the other way and focus on the 2 NovaSeq samples with considerably fewer merged reads, then I think that may be OK (although I think that also shows a much less clear increase in NovaSeq sequences).  For example, there were [2 NovaSeq samples]( https://github.com/cwarden45/Bastu_Cat_Genome/blob/master/Basepaws_Notes/Read_QC/PRJNA513845-eDNA/DADA2/Cutadapt-filtered_read_counts-with_sequencer_and_FLASHplusPEAR_counts.txt) with merged read counts that were similar to MiSeq samples.  Without any clustering or correction, the unique read counts were somewhat higher but not to the extent that I expected from this paper.  I am showing the example with the total merged counts that were most similar below:
+
+SRR8423848 (Illumina NovaSeq 6000): 731,894 PEAR-merged / 164,991 unique / 31,495 unique in >1 read
+
+SRR8423877 (Illumina MiSeq): 762,392 PEAR-Merged / 134,802 unique / 21,371 unique in >1 read
+
+That said, the cutadapt-filtered read counts were more different: 921,553 for SRR8423848 and 764,657 for SRR8423877.
+
+I realize your plots are cumulative, but a small fraction of off-target and/or unintended sequence could have an effect like that (if reads with different coverage count equally).  Also, I think the MiSeq reads covering 200-300 bp amplicons should be able to completely overlapping while parts of the NovaSeq sequence could be coming from only the forward or reverse read?  I think that is related to a different set of points in different comments, but I still have the following questions: 
+
+*a)*	How does this match the analysis that you performed?
+*b)*	Even if I use the full set of available reads, there is noticeable variably for a given set of total reads (most clearly seen with the NovaSeq samples).  If you use the DADA2 and OTU analysis in the paper as a function of coverage, what does that look like if you show the results for each sample separately (instead of combined per sequencer)? If Figure 1 was rarefied (and you were not plotting a totals for unique corrected sequences), then I think Figure 1 should be helping show variability per sample, but I am trying to understand why it gives a different impression than with the re-analysis that I showed above.
+
+I am not sure how much it matters, but I excluded the 4 PhiX outliers from this re-analysis (even though I think complete lack of PhiX Miseq reads may be more important than the relative percent of PhiX reads in the NovaSeq samples, and the PhiX-containing reads were reduced with the cutadapt filter and removed with the DADA filter).
+
