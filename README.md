@@ -183,6 +183,6 @@ I also noticed that some **slightly larger fragments** that were picked up betwe
 
 ![On-Target Read Length Distribution](https://github.com/cwarden45/PRJNA513845-eDNA_reanalysis/blob/master/OTU_clustering/Swarm-all-FLASH_merged_read_length_distribution.png "On-Target Read Length Distribution")
 
-I think extrapolation limitations should be emphasized, so I am not saying the trend in the steeper climb with those multi-read sequences for MiSeq over NovaSeq should be emaphsized without additional critical assessment.
+I think extrapolation limitations should be emphasized, so I am not saying the trend in the steeper climb with those multi-read sequences for MiSeq over NovaSeq should be emaphsized without additional critical assessment.  However, I do believe this may be enough to question the claim that the NovaSeq is the better option for the eDNA amplicons.
 
 
