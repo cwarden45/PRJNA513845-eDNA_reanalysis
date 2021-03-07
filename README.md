@@ -141,7 +141,7 @@ Most of the content for the re-analysis is within the following 4 subfolders:
 
 ---
 
-## Extra follow-up questions (to decrease space in follow-up comments)
+## Extra follow-up questions / comments (to decrease space in follow-up comments)
 
 **Read Sequence / Length**:
 
