@@ -173,9 +173,10 @@ If so, it looks like the effect is more due the amplicon than the sequencer, and
 
 That said, the cutadapt-filtered read counts were more different: 921,553 for SRR8423848 and 764,657 for SRR8423877.
 
-I realize your plots are cumulative, but a small fraction of off-target and/or unintended sequence could have an effect like that (if reads with different coverage count equally).  Also, I think the MiSeq reads covering 200-300 bp amplicons should be able to completely overlapping while parts of the NovaSeq sequence could be coming from only the forward or reverse read?  I think that is related to a different set of points in different comments, but I still have the following questions: 
+So, I still have the following questions: 
 
 *a)*	How does this match the analysis that you performed?
+
 *b)*	Even if I use the full set of available reads, there is noticeable variably for a given set of total reads (most clearly seen with the NovaSeq samples).  **If you use the DADA2 and OTU analysis in the paper as a function of coverage, what does that look like if you show the results for each sample separately (instead of combined per sequencer)?** If *Figure 1* was **rarefied** (and you were not plotting a totals for unique corrected sequences), then I think *Figure 1* should be helping show variability per sample, but I am trying to understand why it gives a different impression than with the re-analysis that I showed above.
 
 I am not sure how much it matters, but I excluded the 4 PhiX outliers from this re-analysis (even though I think complete lack of PhiX Miseq reads may be more important than the relative percent of PhiX reads in the NovaSeq samples, and the PhiX-containing reads were reduced with the cutadapt filter and removed with the DADA filter).
