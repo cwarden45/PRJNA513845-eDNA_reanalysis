@@ -151,7 +151,7 @@ In addition to wanting to check how often the adjacent barcode in the sequenced 
 
 **1b)** What does the degenerate nucleotide sequence “I” represent?  I could find the [others]( https://www.bioinformatics.org/sms/iupac.html), but I apologize that I was not sure about that one.
 
-**2)** Even among DADA2 filtered and corrected reads, the percentage of sequences outside of the length that I thought you might expect (less than 200 bp or more than 300 bp) is greater for the FishE amplicon.  This is true for either the [MiSeq or the NovaSeq data](https://github.com/cwarden45/Bastu_Cat_Genome/blob/master/Basepaws_Notes/Read_QC/PRJNA513845-eDNA/DADA2/DADA2-merged-and-corrected_outlier_length_percentage.png).
+**2)** Even among DADA2 filtered and corrected reads, the percentage of sequences outside of the length that I thought you might expect (less than 200 bp or more than 300 bp) is greater for the FishE amplicon.  This is true for either the MiSeq or the NovaSeq data in the [DADA2 sequences](https://github.com/cwarden45/PRJNA513845-eDNA_reanalysis/blob/master/DADA2/DADA2-merged-and-corrected_outlier_length_percentage.png) that I defined.
 
 Do you agree that these merged and corrected read lengths are outliers that may be more likely to be off-target sequence and/or cross contamination?
 
