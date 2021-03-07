@@ -175,3 +175,14 @@ That said, the cutadapt-filtered read counts were more different: 921,553 for SR
 
 I am not sure how much it matters, but I excluded the 4 PhiX outliers from this re-analysis (even though I think complete lack of PhiX Miseq reads may be more important than the relative percent of PhiX reads in the NovaSeq samples, and the PhiX-containing reads were reduced with the cutadapt filter and removed with the DADA filter).
 
+**3)** If you focus on the sequences that are present in more than 1 read in at least 1 sample, there is a **steeper** trendline for the MiSeq samples:
+
+![All Read Swarm Multi-Read OTU](https://github.com/cwarden45/PRJNA513845-eDNA_reanalysis/blob/master/OTU_clustering/Swarm.all.FLASH_merged_unique_merged_multi-read_versus_total_merged.png "All Read Swarm Multi-Read OTU")
+
+I also noticed that some **slightly larger fragments** that were picked up between 200 bp and 300 bp for the MiSeq but not NovaSeq:
+
+![On-Target Read Length Distribution](https://github.com/cwarden45/PRJNA513845-eDNA_reanalysis/blob/master/OTU_clustering/Swarm-all-FLASH_merged_read_length_distribution.png "On-Target Read Length Distribution")
+
+I think extrapolation limitations should be emphasized, so I am not saying the trend in the steeper climb with those multi-read sequences for MiSeq over NovaSeq should be emaphsized without additional critical assessment.
+
+
