@@ -158,3 +158,5 @@ If I take **unaligned reads** into consideration (again, for the FLASH-merged re
 You may want to need to work with a reduced set of sequences (such as OTUs filtered by supporting reads).
 
 **Swarm OTU (FLASH-Merged, FILTER MIN 100 READS PER OTU PER SAMPLE, Defined from Min 2 Reads in Min 1 Sample)**:
+
+***Not Yet Completed (even with reduced set of reads)***
