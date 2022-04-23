@@ -165,6 +165,6 @@ As I starting point, I ran `megablast_count_summary.sh` to get a sense of Eukary
 
 ![Counts for Filtered OTU with MEGABLAST Hits](FLASH_combined_unique_seqs-min_2_reads--FILTER_OTU_MIN_100_READS-Swarm_OTU_with_counts.megablast-bar_plots.png "Counts for Filtered OTU with MEGABLAST Hits")
 
-If the intended target is a fish gene, then those should be Eukaryotic hits.  There is a noticable number of Prokaryotic hits, but there are more Eukaryotic hits when you take the number of mapped reads per OTU into consideration.
+If the intended target is a fish gene, then those should be Eukaryotic hits.  There is a noticable number of Prokaryotic hits, but there are more Eukaryotic hits **when you take the number of mapped reads per OTU into consideration**.  That is at least partially what we would like to see.
 
 As yet another option, there are SRA taxonomy assignments (as percentages), some of which are reported [here](https://github.com/cwarden45/PRJNA513845-eDNA_reanalysis/blob/master/extended_summary.xlsx) (for mostly prokaryotic assignments).
