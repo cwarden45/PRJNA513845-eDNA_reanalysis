@@ -161,4 +161,10 @@ You may want to need to work with a reduced set of sequences (such as OTUs filte
 
 A compressed version of output table is uploaded as [FLASH_combined_unique_seqs-min_2_reads--FILTER_OTU_MIN_100_READS-Swarm_OTU_with_counts.megablast.gz](https://github.com/cwarden45/PRJNA513845-eDNA_reanalysis/blob/master/metagenomics/FLASH_combined_unique_seqs-min_2_reads--FILTER_OTU_MIN_100_READS-Swarm_OTU_with_counts.megablast.gz).
 
+As I starting point, I ran `megablast_count_summary.sh` to get a sense of Eukaryotic versus Prokaryotic assignments:
+
+![Counts for Filtered OTU with MEGABLAST Hits](FLASH_combined_unique_seqs-min_2_reads--FILTER_OTU_MIN_100_READS-Swarm_OTU_with_counts.megablast-bar_plots.png "Counts for Filtered OTU with MEGABLAST Hits")
+
+If the intended target is a fish gene, then those should be Eukaryotic hits.  There is a noticable number of Prokaryotic hits, but there are more Eukaryotic hits when you take the number of mapped reads per OTU into consideration.
+
 As yet another option, there are SRA taxonomy assignments (as percentages), some of which are reported [here](https://github.com/cwarden45/PRJNA513845-eDNA_reanalysis/blob/master/extended_summary.xlsx) (for mostly prokaryotic assignments).
