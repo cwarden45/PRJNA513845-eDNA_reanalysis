@@ -159,6 +159,6 @@ You may want to need to work with a reduced set of sequences (such as OTUs filte
 
 **Swarm OTU (FLASH-Merged, FILTER MIN 100 READS PER OTU PER SAMPLE, Defined from Min 2 Reads in Min 1 Sample)**:
 
-***Not Yet Completed (even with reduced set of reads)***
+A compressed version of output table is uploaded as [FLASH_combined_unique_seqs-min_2_reads--FILTER_OTU_MIN_100_READS-Swarm_OTU_with_counts.megablast.gz](https://github.com/cwarden45/PRJNA513845-eDNA_reanalysis/blob/master/metagenomics/FLASH_combined_unique_seqs-min_2_reads--FILTER_OTU_MIN_100_READS-Swarm_OTU_with_counts.megablast.gz).
 
 However, there are SRA taxonomy assignments (as percentages), some of which are reported [here](https://github.com/cwarden45/PRJNA513845-eDNA_reanalysis/blob/master/extended_summary.xlsx) (for mostly prokaryotic assignments).
