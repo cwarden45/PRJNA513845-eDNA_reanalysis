@@ -21,7 +21,7 @@ foreach my $file (@files){
 		my $temp_outputfile = "$output_folder/$file";
 		
 		### collect read names ###
-		print "### Step 1) Collecting read times to reduce hash size... ###\n";
+		print "### Step 1) Collecting read names to reduce hash size... ###\n";
 		my %temp_OTU_mapping_hash_rev;
 
 		my $line_count=0;
