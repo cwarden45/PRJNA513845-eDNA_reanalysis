@@ -173,8 +173,8 @@ That same script was also used to produce the following histogram of megablast h
 
 Using that table, the contents can refomatted to potentially more easily add classification information to the per-sample OTU count tables using `check_megablast_hit_status` (with *python3*).
 
-Based upon that Python script, 13,689 sequences out of the total 15,846 input sequences **lacked** megablast hits.  For this reason, further analsyis as not performed.
+Based upon that Python script, **13,689** sequences out of the total 15,846 input sequences **lacked** megablast hits.  For this reason, further analsyis as not performed.
 
-However, that reformatted table is much smaller and is uploaded in this repository as **FLASH_combined_unique_seqs-min_2_reads--FILTER_OTU_MIN_100_READS-Swarm_OTU_with_counts.megablast-simple.txt**.
+However, that reformatted table is much smaller and is uploaded in this repository as [FLASH_combined_unique_seqs-min_2_reads--FILTER_OTU_MIN_100_READS-Swarm_OTU_with_counts.megablast-simple.txt](https://github.com/cwarden45/PRJNA513845-eDNA_reanalysis/blob/master/metagenomics/FLASH_combined_unique_seqs-min_2_reads--FILTER_OTU_MIN_100_READS-Swarm_OTU_with_counts.megablast-simple.txt).
 
 **6)** As yet another option, there are SRA taxonomy assignments (as percentages), some of which are reported [here](https://github.com/cwarden45/PRJNA513845-eDNA_reanalysis/blob/master/extended_summary.xlsx) (for mostly prokaryotic assignments).
