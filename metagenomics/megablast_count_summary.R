@@ -21,7 +21,7 @@ barplot(count_per_kingdom, main = "Summed Counts per Filtered OTU with BLAST Hit
 dev.off()
 
 png(output.plot2)
-hist(input.table$V5, main="megablast hit length", col="gray")
+hist(input.table$V5, main = "", xlab="megablast hit length", col="gray")
 dev.off()
 
 #BLAST hit accession in V2, BLAST hit length in V5, BLAST hit kingdom in V9, intermediate BLAST name in V12
