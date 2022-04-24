@@ -90,4 +90,6 @@ The OTU sequences mapped to each sample can be downloaded [here](https://zenodo.
 
 **5)** Use `combine_unique_sequences-multiread-OTU.py` to create the input files for a MegaBLAST search for the reduced set of OTU sequences (with name matching count files, and possibly subject to additional filters).
 
-***Not Yet Completed (even for reduced set)***
+MegaBLAST results can be viewed within the [metagenomics](https://github.com/cwarden45/PRJNA513845-eDNA_reanalysis/blob/master/metagenomics/README.md) subfolder.  
+
+However, due to the low classification rate (even among the filtered sequences), additional plots per-sample are not currently provided on this page.
