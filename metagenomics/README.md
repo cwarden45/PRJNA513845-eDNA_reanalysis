@@ -163,7 +163,7 @@ A compressed version of output table is uploaded as [FLASH_combined_unique_seqs-
 
 As I starting point, I ran `megablast_count_summary.sh` to get a sense of Eukaryotic versus Prokaryotic assignments:
 
-![Counts for Filtered OTU with MEGABLAST Hits](FLASH_combined_unique_seqs-min_2_reads--FILTER_OTU_MIN_100_READS-Swarm_OTU_with_counts.megablast-bar_plots.png "Counts for Filtered OTU with MEGABLAST Hits")
+![Counts for Filtered OTU with MegaBLAST Hits](FLASH_combined_unique_seqs-min_2_reads--FILTER_OTU_MIN_100_READS-Swarm_OTU_with_counts.megablast-bar_plots.png "Counts for Filtered OTU with MegaBLAST Hits")
 
 If the intended target is a fish gene, then those should be Eukaryotic hits.  There is a noticable number of Prokaryotic hits, but there are more Eukaryotic hits **when you take the number of mapped reads per OTU into consideration**.  That is at least partially what we would like to see.
 
@@ -171,7 +171,7 @@ That same script was also used to produce the following histogram of megablast h
 
 ![MEGABLAST Hits Lengths](FLASH_combined_unique_seqs-min_2_reads--FILTER_OTU_MIN_100_READS-Swarm_OTU_with_counts.megablast-hit_length_hist.png "MEGABLAST Hits Lengths")
 
-Using that table, the contents can refomatted to potentially more easily add classification information to the per-sample OTU count tables using `check_megablast_hit_status` (with *python3*).
+Using that table, the contents can refomatted to potentially more easily add classification information to the per-sample OTU count tables using `check_megablast_hit_status.py` (with *python3*).
 
 Based upon that Python script, **13,689** sequences out of the total 15,846 input sequences **lacked** megablast hits.  For this reason, further analsyis as not performed.
 
