@@ -2,6 +2,8 @@ The orignal goal was to look for barcodes past the amplicon sequence to get a se
 
 Getting back to the analysis for this [post-publication review discussion](https://www.nature.com/articles/s41598-019-42455-9#article-comments), at first, I was not sure why my code is not identifying any barcodes (especially for the MiSeq samples), so I started to look at 1 example.
 
+**NOTE:** While it looks like the journal may have changed thier *Disqus* policy, I can currently still see the discussion for my comment thread [here](https://disqus.com/home/discussion/srep/comprehensive_biodiversity_analysis_via_ultra_deep_patterned_flow_cell_technology_a_case_study_of_ed/).  It is harder to read, but I also posted a PDF [here](https://drive.google.com/file/d/1HaPUAnRjvDFuLz1G8d3N51tWW1vKHq_I/view?usp=sharing).  I believe that this is something important, and I hope that this is re-enabled.
+
 For example, here are the 1st 3 paired-end reads for SRR8423864:
 
 ```
