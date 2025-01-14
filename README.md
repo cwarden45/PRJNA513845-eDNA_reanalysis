@@ -1,9 +1,9 @@
 The orignal goal was to look for barcodes past the amplicon sequence to get a sense of barcode hopping (as was done for [this feline Whole Genome Sequencing sample](https://github.com/cwarden45/Bastu_Cat_Genome/tree/master/Basepaws_Notes/Read_QC)).  However, to better connnect the data on [Zenodo](https://zenodo.org/record/4546559), this separate repository was created.  So, to see the earliest history, you will have to view the [other reposistory](https://github.com/cwarden45/Bastu_Cat_Genome/tree/05197be171c846dcb21a7bfd1d1789cb6d405501/Basepaws_Notes/Read_QC/PRJNA513845-eDNA).  This probably won't be necessary, but I am making a note to be as transparent as possible.
 
-Getting back to the analysis for this [post-publication review discussion](https://www.nature.com/articles/s41598-019-42455-9#article-comments), at first, I was not sure why my code is not identifying any barcodes (especially for the MiSeq samples), so I started to look at 1 example.
-
 **NOTE:** While it looks like the journal may have changed thier *Disqus* policy, I can currently still see the discussion for my comment thread [here](https://disqus.com/home/discussion/srep/comprehensive_biodiversity_analysis_via_ultra_deep_patterned_flow_cell_technology_a_case_study_of_ed/).  It is harder to read, but I also posted a PDF [here](https://drive.google.com/file/d/1HaPUAnRjvDFuLz1G8d3N51tWW1vKHq_I/view?usp=sharing).  I believe that this is something important, and I hope that this is re-enabled.
- - Even though I don't currently see the *Disqus* section for [this *Nature* article](https://www.nature.com/articles/s41586-022-05275-y) studying saturation of common variant effects on human height, I believe that I can see anything that was approved to be posted (including that particular comment) on [my *Disqus* profile](https://disqus.com/by/charleswarden/). 
+ - Even though I don't currently see the *Disqus* section for [this *Nature* article](https://www.nature.com/articles/s41586-022-05275-y) studying saturation of common variant effects on human height, I believe that I can see anything that was approved to be posted (including that particular comment) on [my *Disqus* profile](https://disqus.com/by/charleswarden/).
+
+Getting back to the analysis for this [post-publication review discussion](https://www.nature.com/articles/s41598-019-42455-9#article-comments), at first, I was not sure why my code is not identifying any barcodes (especially for the MiSeq samples), so I started to look at 1 example. 
 
 For example, here are the 1st 3 paired-end reads for SRR8423864:
 
